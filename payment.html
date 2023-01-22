@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+    <form action="#" method="get">
+        <div class="container">
+            <h1 class="heading">Payment Form</h1>
+            <h2>Contact Information</h2>
+            <p>Name: *<input type="text" name="name" id="name" placeholder="Ajay Rajput"></p>
+            <fieldset>
+                <legend >Gender*</legend>
+                <p>male <input type="radio" name="Gender" id="Gender">
+                Female <input type="radio" name="Gender" id="Gender"></p>
+            </fieldset>
+            <p>Address <textarea name="txt_address" id="address" cols="50" rows="10"></textarea></p>
+            <p>Email: *<input type="email" name="email" id="email"></p>
+            <p>PinCode: *<input type="number"></p>
+            <h2>Payment Information</h2>
+            <p>Card Type: *
+             <select name="Card" id="Card" required>
+                <option value="-1">--Select Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="rupay">Rupay</option>
+             </select>
+            </p>
+            <p>Card Number: *<input type="number" name="cardnumber" id="cardnumber"></p>
+            <p>Expiration Date: * <input type="date" name="date" id="date"></p>
+            <p>CVV: *<input type="number" name="cvv" id="cvv"></p>
+           <input type="submit" name="pay Now" value="Pay Now">
+        </div>
+    </form>
+</body>
+</html>
